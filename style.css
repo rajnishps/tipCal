@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.cal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  height: 400px;
+  width: 400px;
+  background-color: brown;
+}
+
+.bill-line,
+.tip-line {
+  display: flex;
+ margin: 20px;
+}
+ span{
+  position: relative;
+  left:18px;
+ }
+
+input{
+  padding-left: 20px;
+  flex-grow: 1;
+  border-radius: 20px;
+}
+
+.bottom-container{
+  display: flex;
+
+}
+
+.total-per-person{
+margin: 0;
+text-align: right;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>tip</title>
+  </head>
+  <body>
+    <div class="cal">
+      <div class="main-container">
+        <h1>Tip Calculator</h1>
+        <div class="inputs-container">
+          <div class="bill-box">
+            <h2>Bill Amount</h2>
+            <div class="bill-line">
+              <span>$</span>
+              <input
+                onkeyup="calculateBill()"
+                placeholder="0.00"
+                class="billInput"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="tip-input">
+            <h2>Tip Amount</h2>
+            <div class="tip-line">
+              <span>%</span>
+              <input
+                onkeyup="calculateBill()"
+                placeholder="0.00"
+                class="tipInput"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <div class="number-of-people">
+            <button onclick="minusPeople()" class="minusPeople">-</button>
+            <span class="noPeople">5</span>
+            <button onclick="plusPeople()" class="plusPeople">+</button>
+          </div>
+          <div class="total-per-person">
+            <h2>Total Per Person</h2>
+            <div class="totalPerPerson">
+              <p class="total">0.00</p>
+            </div>
+          </div>
+        </div>
+        <button onclick="resetit()" class="reset">reset</button>
+      </div>
+    </div>
+  </body>
+</html>
