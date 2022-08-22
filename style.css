@@ -5,7 +5,15 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: monospace;
+}
+h1{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
 }
 .cal {
   height: 100vh;
@@ -15,32 +23,60 @@ body {
 }
 .main-container {
   height: 400px;
-  width: 400px;
-  background-color: brown;
+  width: 300px;
+  background-color: rgba(48, 52, 116, 0.741);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .bill-line,
 .tip-line {
   display: flex;
- margin: 20px;
+ margin: 10px;
 }
- span{
-  position: relative;
-  left:18px;
- }
 
+.dollar,.percent {
+ position: relative;
+ z-index: 2;
+}
 input{
   padding-left: 20px;
   flex-grow: 1;
   border-radius: 20px;
+  position: relative;
+  right: 20px;
+  margin-bottom: 10px;
 }
+h2{
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
 
+}
+button{
+  height: 25px;
+  width: 25px;
+  border-radius: 9999px;
+  border: none;
+}
+.reset{
+  width:80px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  position: relative;
+  top: -25px;
+
+}
 .bottom-container{
   display: flex;
+  justify-content: space-between;
 
 }
 
-.total-per-person{
+.total{
 margin: 0;
 text-align: right;
+font-size: 30px;
+margin-top: 10px;
 }

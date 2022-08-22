@@ -16,7 +16,7 @@
           <div class="bill-box">
             <h2>Bill Amount</h2>
             <div class="bill-line">
-              <span>$</span>
+              <span class="dollar">$</span>
               <input
                 onkeyup="calculateBill()"
                 placeholder="0.00"
@@ -28,7 +28,7 @@
           <div class="tip-input">
             <h2>Tip Amount</h2>
             <div class="tip-line">
-              <span>%</span>
+              <span class="percent">%</span>
               <input
                 onkeyup="calculateBill()"
                 placeholder="0.00"
@@ -41,13 +41,13 @@
         <div class="bottom-container">
           <div class="number-of-people">
             <button onclick="minusPeople()" class="minusPeople">-</button>
-            <span class="noPeople">5</span>
+            <span class="noPeople">1</span>
             <button onclick="plusPeople()" class="plusPeople">+</button>
           </div>
           <div class="total-per-person">
-            <h2>Total Per Person</h2>
+            <h2 class="ttppn">Per Person</h2>
             <div class="totalPerPerson">
-              <p class="total">0.00</p>
+              <p class="total">0</p>
             </div>
           </div>
         </div>
