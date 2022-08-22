@@ -24,12 +24,12 @@ const calculateBill = () => {
   let tip = Number(tipInput.value);
   let tips = (bill / 100) * tip;
   let peo = Number(numPeople.textContent);
-  total.textContent = Math.ceil((bill + tips) / peo);
+  total.textContent = ((bill + tips) / peo).toFixed(2);
 };
 
 const resetit = () => {
   numPeople.textContent = 1;
   billInput.value = "";
   tipInput.value = "";
-  total.textContent = "0";
+  total.textContent = "0,00";
 };
